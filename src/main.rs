@@ -51,7 +51,7 @@ impl App for MyApp {
         };
 
         engine.update_time_value(self.time)?;
-        self.time = (self.time + 0.001).fract();
+        self.time = (self.time + 0.005).fract();
 
         Ok(FramePacket {
             objects: vec![paper],
